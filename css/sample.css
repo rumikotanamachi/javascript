@@ -1,0 +1,181 @@
+html{
+    background-image: url("../img/背景.png");
+    background-size: cover;
+}
+
+.loading{
+background: #6495ED;
+box-shadow: 0px 0px 0px 5px #6495ED;
+border: dashed 2px white;
+padding: 0.2em 0.5em;
+font-family: "Lucida Grande", "segoe UI", "ヒラギノ丸ゴ ProN W4", "Hiragino Maru Gothic ProN", Meiryo, Arial, sans-serif;
+margin-bottom: 30px;
+}
+
+
+
+.loading{
+    font-size: 60px;
+    color: white;
+    height: 100px;
+    
+    
+}
+.loading{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 50px;
+
+}
+.loading span {
+  display: inline-block;
+  margin: 0 -.05em;
+  animation: loading .7s infinite;
+}
+.loading span:nth-child(2) {
+  animation-delay: .1s;
+}
+.loading span:nth-child(3) {
+  animation-delay: .2s;
+}
+.loading span:nth-child(4) {
+  animation-delay: .3s;
+}
+.loading span:nth-child(5) {
+  animation-delay: .4s;
+}
+.loading span:nth-child(6) {
+  animation-delay: .5s;
+}
+.loading span:nth-child(7) {
+  animation-delay: .6s;
+}
+@keyframes loading {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(15px);
+  }
+}
+
+
+#playerWrapper {
+    position: absolute;
+    top: 0;
+    left : 0;
+    height: 100%;
+    z-index: 101;
+}
+/* playerそのもの */
+#player {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    border: none;
+    background-color: #fff;
+    z-index: -999 !important;
+    /* z-indexでもはまる */
+}
+/* playerの前に立ちはだかる壁 */
+#playerWall {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    border: none;
+    background-color: #fff;
+    z-index: 100;
+}
+/* じゃんけん画像 */
+.jyanken_img{
+    margin: 0%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+
+.video_box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+}
+#btn{
+    font-size: 30px;
+    margin-bottom: 80px;
+    margin-top: 80px;
+}
+
+.judgment{
+    background: #6495ED;
+    box-shadow: 0px 0px 0px 5px #6495ED;
+    border: dashed 2px white;
+    font-family: "Lucida Grande", "segoe UI", "ヒラギノ丸ゴ ProN W4", "Hiragino Maru Gothic ProN", Meiryo, Arial, sans-serif;
+    margin-bottom: 30px;
+    margin-top: 80px;
+    width: 50%;
+    height: 90px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+#judgment h1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 70px;
+    color: white;
+    width: 400px;
+    height: 90px;
+}
+#judgment{
+    font-family: "Lucida Grande", "segoe UI", "ヒラギノ丸ゴ ProN W4", "Hiragino Maru Gothic ProN", Meiryo, Arial, sans-serif;
+    /* margin-bottom: 30px;
+    margin-top: 80px; */
+    /* width: 50%;
+    height: 10%; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 70px;
+    color: white;
+    width: 400px;
+    height: 90px;
+
+}
+
+#btn{
+    display: inline-block;
+    text-decoration: none;
+    background: #6495ED;
+    color: #FFF;
+    width: 120px;
+    height: 120px;
+    line-height: 120px;
+    border-radius: 50%;
+    text-align: center;
+    font-weight: bold;
+    vertical-align: middle;
+    overflow: hidden;
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.29);
+    border-bottom: solid 3px #668ad8;
+    transition: .4s;
+}
+
+#btn:active{
+    -ms-transform: translateY(2px);
+    -webkit-transform: translateY(2px);
+    transform: translateY(2px);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0.15);
+    border-bottom: none;
+}
+
